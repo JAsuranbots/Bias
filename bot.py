@@ -7,8 +7,6 @@ import PyBypass as bypasser
 import requests
 import json
 import sqlite3
-
-#-------end of db
 client = TelegramClient('anonn56ne2',1651836,"f8244276a17b5b2a711e7501857c8e55")
 url_regex = re.compile(r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+')
 check_subscribe = []
@@ -107,6 +105,6 @@ async def handler(event):
   #bypassed_link = bypasser.bypass(event.raw_text)
   #await event.reply(bypassed_link)
 print("bor_starting......")
-await client.start(bot_token="5939463789:AAGXWKRX7w7uCXS-BREv_XiJ1ib5GjOa9bA")
+client.start(bot_token="5939463789:AAGXWKRX7w7uCXS-BREv_XiJ1ib5GjOa9bA")
 print("bot_run_until_con......")
-await client.run_until_disconnected()
+client.run_until_disconnected()
