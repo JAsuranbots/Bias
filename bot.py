@@ -1,6 +1,6 @@
 from telethon import TelegramClient, events
 import re
-from tqdm import tqdm
+#from tqdm import tqdm
 import asyncio
 from telethon.tl.custom import Button
 import os
